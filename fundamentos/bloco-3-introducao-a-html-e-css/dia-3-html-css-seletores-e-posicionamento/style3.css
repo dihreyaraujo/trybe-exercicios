@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1, p{
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+}
+
+ul:hover{
+    background-color: green;
+}
+ul:active{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ol{
+    list-style: none;
+    text-align: center;
+}
