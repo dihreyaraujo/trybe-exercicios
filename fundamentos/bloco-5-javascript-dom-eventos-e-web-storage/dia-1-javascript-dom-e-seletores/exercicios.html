@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        
+    function year2(){
+        let year = document.getElementsByTagName("p")[1].innerText = "Me vejo como um programador pleno, em uma grande empresa e tendo independência financeira";
+    }
+
+    year2();
+    
+    
+    function yellow() {
+        let amarelo = document.getElementsByClassName('main-content')[0].style.backgroundColor = "rgb(76,164,109)";
+    }
+
+    
+    function white() {
+        let branco = document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+    }
+
+    white();
+    
+    
+    function corrigeTitulo() {
+        let title = document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
+    }
+
+    corrigeTitulo();
+    
+    function maiusculo(seletor) {
+        let paragrafo = document.getElementsByTagName(seletor)
+        let text = '';
+        for(let index2 = 0; index2 < paragrafo.length; index2 += 1) {
+            text = paragrafo[index2].innerText;
+            text = text.toUpperCase();
+            paragrafo[index2].innerText = text
+        }
+    }
+
+    maiusculo('p');
+    
+    
+    function conteudoConsole() {
+        let select = document.getElementsByTagName('p');
+        for(let index = 0; index < select.length; index += 1) {
+            console.log(select[index].innerText);
+        }
+    }
+    
+    conteudoConsole()
+    
+    
+   
+    
+    /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+ Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+ Crie uma função que mude a cor do quadrado vermelho para branco.
+ Crie uma função que corrija o texto da tag <h1>.
+ Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+    </script>
+  </body>
+</html>
