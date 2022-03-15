@@ -120,14 +120,8 @@
 
     document.getElementsByClassName('center-content')[0].parentElement.style.backgroundColor = 'green';
 
-    let elemento = document.getElementsByTagName('ul');
-    
-    for(let index2 = 0; index2 < listaNaoOrdenada.length; index2 += 1) {
-        let elements = elemento[index2]
-        if(elements.innerText.includes('nove')) {
-            listaUl.removeChild(elements);
-        }
-    }
+    listaUl.lastChild.remove();
+    listaUl.lastChild.remove();
 
 
     
