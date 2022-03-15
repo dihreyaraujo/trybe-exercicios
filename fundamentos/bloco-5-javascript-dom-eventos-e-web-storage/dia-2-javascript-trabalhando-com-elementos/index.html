@@ -61,6 +61,7 @@
     let titulo = document.createElement('h1');    
     let texto = document.createTextNode('Exercício 5.2 - JavaScript DOM');
     titulo.appendChild(texto);
+    titulo.className = 'title';
     pai.appendChild(titulo);
 
     let tagMain = document.createElement('main');
@@ -83,6 +84,7 @@
     let sectionRight = document.createElement('section');
     sectionRight.className = 'right-content';
     tagMain.appendChild(sectionRight);
+    document.getElementsByClassName('right-content')[0].style.margin = 'auto';
 
     let image = document.createElement('img');
     image.src = 'https://picsum.photos/200'
@@ -104,14 +106,30 @@
     sectionRight.appendChild(listaUl);
 
     let firstH3 = document.createElement('h3');
+    firstH3.className = 'description'
     let secondH3 = document.createElement('h3');
+    secondH3.className = 'description'
     let thirdH3 = document.createElement('h3');
+    thirdH3.className = 'description'
 
     tagMain.appendChild(firstH3);
     tagMain.appendChild(secondH3);
     tagMain.appendChild(thirdH3);
 
+    tagMain.removeChild(sectionLeft);
+
+    document.getElementsByClassName('center-content')[0].parentElement.style.backgroundColor = 'green';
+
+    let elemento = document.getElementsByTagName('ul');
     
+    for(let index2 = 0; index2 < listaNaoOrdenada.length; index2 += 1) {
+        let elements = elemento[index2]
+        if(elements.innerText.includes('nove')) {
+            listaUl.removeChild(elements);
+        }
+    }
+
+
     
       
       
