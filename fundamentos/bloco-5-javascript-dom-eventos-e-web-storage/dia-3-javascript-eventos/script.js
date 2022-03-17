@@ -57,3 +57,42 @@ function holiday(string) {
 }
 
 holiday('feriados')
+
+
+
+// function changeBackground() {
+//     let feriado = document.getElementsByClassName('holiday')
+//     for(let index = 0; index < feriado.length; index += 1) {
+//     feriado[index].style.backgroundColor = '#BDECB6';
+//     }
+// }
+
+
+    
+
+function corBackground() {    
+    let btnFeriados = document.getElementById('btn-holiday');
+    let feriado = document.querySelectorAll('.holiday'); 
+    
+    btnFeriados.addEventListener('click', function() {
+        for(let index = 0; index < feriado.length; index += 1) {
+            
+            if(feriado[index].style.backgroundColor !== '#BDECB6'){
+                feriado[index].style.backgroundColor = '#BDECB6';
+            }
+        
+            else {
+                feriado[index].style.backgroundColor = 'rgb(238,238,238)';
+            }
+        }
+    })
+}
+
+corBackground();
+
+
+
+
+
+
+
