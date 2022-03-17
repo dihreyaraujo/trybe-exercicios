@@ -1,0 +1,120 @@
+#amarelo {
+    background-color: #dfd880;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#branco {
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#azul {
+    background-color: #80bcdf;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#amarelo-texto{
+    background-color: #dfd880;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#branco-texto{
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#azul-texto{
+    background-color: #80bcdf;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#texto-pequeno{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;   
+}
+
+#texto-medio{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center; 
+    font-size: 17px;
+}
+
+#texto-grande{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center; 
+    font-size: 20px;
+}
+
+#pouco-espaço{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;   
+}
+
+#medio-espaço{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;   
+}
+
+#grande-espaço{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;   
+}
+
+#arial{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;   
+}
+
+#tnr{
+    width: 160px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;   
+}
+
