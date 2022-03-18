@@ -5,21 +5,37 @@ let branco = document.getElementById('branco');
 let azul = document.getElementById('azul');
 
 function backgroundYellow() {
-    localStorage.setItem('amarelo', '#dfd880');
-    let corAmarelo = localStorage.getItem('amarelo');
+    localStorage.setItem('background', '#dfd880');
+    let corAmarelo = localStorage.getItem('background');
     document.body.style.backgroundColor = corAmarelo;
 }
 
 function backgroundWhite() {
-    localStorage.setItem('branco', 'white');
-    let corBranco = localStorage.getItem('branco');
-    document.body.style.backgroundColor = corBranco;
+    localStorage.setItem('background', 'white');
+    let corBranco = localStorage.getItem('background');
+    document.body.style.backgroundColor = corBranco;  
 }
 
 function backgroundBlue() {
-    localStorage.setItem('azul', '#80bcdf');
-    let corAzul = localStorage.getItem('azul');
+    localStorage.setItem('background', '#80bcdf');
+    let corAzul = localStorage.getItem('background');
     document.body.style.backgroundColor = corAzul;
+}
+
+let backgroundBody = localStorage.getItem('background');
+let colorText = localStorage.getItem('color-text');
+let textSize = localStorage.getItem('font-size');
+let lineSpace = localStorage.getItem('espaçamento');
+let fontFamily = localStorage.getItem('font');
+
+window.onload = function() {
+    document.body.style.backgroundColor = backgroundBody;
+    document.body.style.color = colorText;
+    document.body.style.fontSize = textSize;
+    document.body.style.fontFamily = fontFamily;
+    for(let index = 0; index < paragrafo.length; index += 1) {
+        paragrafo[index].style.lineHeight = lineSpace;
+    }
 }
 
 amarelo.addEventListener('click', backgroundYellow);
@@ -34,20 +50,20 @@ let textoBranco = document.getElementById('branco-texto');
 let textoAzul = document.getElementById('azul-texto');
 
 function textYellow() {
-    localStorage.setItem('texto-amarelo', '#dfd880');
-    let corAmarelo = localStorage.getItem('texto-amarelo');
+    localStorage.setItem('color-text', '#dfd880');
+    let corAmarelo = localStorage.getItem('color-text');
     document.body.style.color = corAmarelo;
 }
 
 function textWhite() {
-    localStorage.setItem('texto-branco', 'white');
-    let corBranco = localStorage.getItem('texto-branco');
+    localStorage.setItem('color-text', 'white');
+    let corBranco = localStorage.getItem('color-text');
     document.body.style.color = corBranco;
 }
 
 function textBlue() {
-    localStorage.setItem('texto-azul', '#80bcdf');
-    let corAzul = localStorage.getItem('texto-azul');
+    localStorage.setItem('color-text', '#80bcdf');
+    let corAzul = localStorage.getItem('color-text');
     document.body.style.color = corAzul;
 }
 
@@ -64,14 +80,17 @@ let textoG = document.getElementById('texto-grande');
 
 function textoPequeno() {
     document.body.style.fontSize = '1em';
+    localStorage.setItem('font-size', '1em');
 }
 
 function textoMedio() { 
     document.body.style.fontSize = '1.2em';
+    localStorage.setItem('font-size', '1.2em');
 }
 
 function textoGrande() {
     document.body.style.fontSize = '1.4em';
+    localStorage.setItem('font-size', '1.4em');
 }
 
 textoP.addEventListener('click', textoPequeno);
@@ -90,18 +109,21 @@ function poucoEspaçamento() {
     for(let index = 0; index < paragrafo.length; index += 1) {
         paragrafo[index].style.lineHeight = '1.3em';
     }
+    localStorage.setItem('espaçamento', '1.3em');
 }
 
 function medioEspaçamento() {
     for(let index = 0; index < paragrafo.length; index += 1) {
         paragrafo[index].style.lineHeight = '1.6em';
     }
+    localStorage.setItem('espaçamento', '1.6em');
 }
 
 function grandeEspaçamento() {
     for(let index = 0; index < paragrafo.length; index += 1) {
         paragrafo[index].style.lineHeight = '1.8em';
     }
+    localStorage.setItem('espaçamento', '1.8em');
 }
 
 poucoEspaço.addEventListener('click', poucoEspaçamento);
@@ -117,10 +139,12 @@ let tnr = document.getElementById('tnr');
 
 function arialText() {
     document.body.style.fontFamily = 'Arial';  
+    localStorage.setItem('font', 'Arial');
 }
 
 function tnrText() {
     document.body.style.fontFamily = 'Time News Roman';   
+    localStorage.setItem('font', 'Time News Roman');
 }
 
 
