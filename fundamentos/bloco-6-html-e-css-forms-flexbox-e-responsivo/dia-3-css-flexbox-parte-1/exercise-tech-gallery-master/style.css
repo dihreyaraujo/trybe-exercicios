@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: rgb(49, 49, 49); 
+}
+
+header a{
+  color: white;
+}
+
+#text{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+#hardskills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto 13px auto;
+  width: 30%;
+
+}
+
+.hskill{
+  background-color: rgba(128, 128, 128, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.294);
+  margin: 0px 10px 15px 0px;
+  height: 220px;
+  width: 180px;
+}
+
+hr {
+  margin: auto;
+  margin-top: 10px;
+  width: 25%;
+}
+
+footer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
